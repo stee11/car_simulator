@@ -1,0 +1,1 @@
+This is a program made by Steven Kolln which simulates 100 cars advancing through a traffic light. Output is displayed to a textfile. To run the file you can either use the ant command in home directory or compile and run the Drive.java file in the edu/tcnj/kollns1/ directory.

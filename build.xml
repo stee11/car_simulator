@@ -1,0 +1,33 @@
+<project name="Project 3" default="run">
+
+<target name="clean">
+	<delete defaultexcludes="no">
+	<fileset dir="." includes="**/*.class"/>
+	</delete>
+	<delete dir="META-INF/"/>
+</target>
+	
+<target name="run" depends="who,compile">
+	<java classname="edu.tcnj.kollns1.Driver" fork="yes" classpath="." >
+	</java>
+</target>
+
+<target name="compile" depends="clean">
+	<javac  srcdir=".">
+	<include name="**/*.java"/>
+	</javac>
+</target>
+
+<target name="jar" depends="clean, compile">
+	<jar includes="build.xml,edu/tcnj/kollns1/*.java,javafoundations/*.java,javafoundations/exceptions/*.java" basedir="." jarfile="kollns1.jar">
+		<manifest>
+			<attribute name="Built-By" value="Steven Kolln CSC 230 02"/>
+		</manifest>
+	</jar>
+</target>
+
+<target name="who">
+	<echo message="Steven Kolln CSC 230 02"/>
+</target>
+
+</project>
