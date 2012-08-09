@@ -1,4 +1,4 @@
-<project name="Project 3" default="run">
+<project name="Car_Simulator" default="run">
 
 <target name="clean">
 	<delete defaultexcludes="no">
