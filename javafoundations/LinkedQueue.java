@@ -1,7 +1,4 @@
 /**Steven Kolln
-Project 3
-CSC 230 02
-4/13/11
 LinkedQueue*/
 package javafoundations;
 import javafoundations.exceptions.*;
